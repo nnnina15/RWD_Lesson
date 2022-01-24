@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, 
+  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* max-width */
+        *,*:before,*::after{
+            box-sizing: border-box;
+        }
+        body{
+            color: #fff;
+        }
+        .container{
+            max-width: 1140px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin:0 auto;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu{
+            width: 30%;
+            background: pink;
+        }
+        .content{
+            width: 70%;
+            background: green;
+        }
+        @media(max-width:992px){
+            .container{
+                max-width: 960px;
+        }
+        }
+        @media(max-width:768px){
+            .container{
+                max-width: 720px;
+            }
+            .menu{
+                width: 100%;
+            }
+            .content{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="menu">
+                <h2>menu</h2>
+            </div>
+            <div class="content">
+                <h2>content</h2>
+            </div>
+        </div>
+        
+      </div>
+</body>
+</html>
